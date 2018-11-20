@@ -1,4 +1,4 @@
 {
-  "extends": "tslint-config-standard",
+  "extends": "tslint-config-airbnb",
   "defaultSeverity": "warning"
 }
