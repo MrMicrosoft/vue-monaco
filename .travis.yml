@@ -10,6 +10,12 @@ install:
 script:
   - npm run test:unit
 
+deploy:
+  provider: firebase
+  token:
+    secure: "1/G4797V37nQfPMxH3OWjH9zq3ys1zUeBr8DWCrr_TrEUPd9W7DAQ-RJYSqoDPpOIQ"
+  message: "Client Deploy"
+
 cache:
   directories:
     - client/node_modules
