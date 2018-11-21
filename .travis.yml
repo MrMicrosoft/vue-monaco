@@ -8,6 +8,7 @@ install:
 
 script:
   - npm run test:unit
+  - cd ..
 
 script:
   - ls -lsa
