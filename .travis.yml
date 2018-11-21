@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "stable"
+  - "8"
+
+install:
+  - cd client
+  - npm install
+
+script:
+  - npm run test:unit
+
+cache:
+  directories:
+    - client/node_modules
