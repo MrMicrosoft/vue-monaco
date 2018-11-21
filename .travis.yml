@@ -13,7 +13,9 @@ script:
   - cd ..
 
 script:
-  - ls -lsa
+  - cd client
+  - npm run build
+  - cd ..
 
 deploy:
   provider: firebase

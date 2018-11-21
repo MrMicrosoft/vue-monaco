@@ -1,5 +1,5 @@
 <template>
-  <div>Another counter created with a .vue : {{ text }}</div>
+  <div>Another counter created with a .vue {{ text }}</div>
 </template>
 
 <script lang="ts">
