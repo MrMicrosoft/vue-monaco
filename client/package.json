@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"cross-env NODE_ENV=development webpack-dev-server --hot\" \"vuetype --watch src\"",
     "build": "cross-env NODE_ENV=production webpack",
-    "test:unit": "jest -i",
+    "test:unit": "jest",
     "vuetype": "vuetype src"
   },
   "keywords": [],
@@ -15,7 +15,6 @@
   "devDependencies": {
     "@types/jest": "^23.3.9",
     "@vue/test-utils": "^1.0.0-beta.25",
-    "concurrently": "^4.1.0",
     "cross-env": "^5.1.1",
     "fork-ts-checker-webpack-plugin": "^0.3.0",
     "jest": "^23.6.0",
@@ -34,7 +33,8 @@
     "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
-    "vue": "^2.5.13"
+    "vue": "^2.5.13",
+    "concurrently": "^4.1.0"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -43,11 +43,6 @@
       "json",
       "vue"
     ],
-    "globals": {
-      "ts-jest": {
-        "diagnostics": false
-      }
-    },
     "transform": {
       ".*\\.(vue)$": "vue-jest",
       "^.+\\.tsx?$": "ts-jest"

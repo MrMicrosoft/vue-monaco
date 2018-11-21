@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import CountVue from '../src/components/CountVue';
+import CountVue from '../src/components/CountVue.vue';
 
 describe('HelloTest', () => {
     test('test', () => {
