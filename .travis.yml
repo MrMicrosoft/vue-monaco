@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - "stable"
-  - "8"
 
 install:
   - cd client
@@ -10,11 +9,16 @@ install:
 script:
   - npm run test:unit
 
+script:
+  - ls -lsa
+
 deploy:
   provider: firebase
   token:
     secure: "1/G4797V37nQfPMxH3OWjH9zq3ys1zUeBr8DWCrr_TrEUPd9W7DAQ-RJYSqoDPpOIQ"
   message: "Client Deploy"
+  on:
+    branch: master
 
 cache:
   directories:
