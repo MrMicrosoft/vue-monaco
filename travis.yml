@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+node_js:
+  - "stable"
+
+jobs:
+  include:
+    - stage: install
+      script: "cd client \ npm install"
+    - stage: ls
+      script: "ls -lsa"
+    - stage: unit tests
+      script: "cd client \ npm run test:unit"
+    - stage: ls
+      script: "ls -lsa"
+    - stage: build
+      script: "cd client \ npm run build"
