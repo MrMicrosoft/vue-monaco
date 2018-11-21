@@ -5,8 +5,10 @@ node_js:
 install:
   - cd client
   - npm install
+  - cd ..
 
 script:
+  - cd client
   - npm run test:unit
   - cd ..
 
