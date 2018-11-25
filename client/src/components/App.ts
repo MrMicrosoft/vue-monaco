@@ -4,7 +4,7 @@ import CountVue from './CountVue.vue';
 @Component({
   components: { CountVue },
   template: `<div>
-    <p>This demo is stupid, but it shows how components are reloaded</p>
+    <p>This demo is stupid, but it shows how components are reloaded!!!!</p>
     <CountVue></CountVue>
   </div>`
 })
