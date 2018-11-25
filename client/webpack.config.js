@@ -3,6 +3,7 @@ const ForkCheckerPlugin = require('fork-ts-checker-webpack-plugin')
 const UglifyPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
 const isProduction = process.env.NODE_ENV === 'production'
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 let config = {
   devtool: isProduction ? false : 'cheap-module-eval-source-map',
@@ -44,6 +45,9 @@ let config = {
   plugins: [
     // Doesn't support *.vue yet !
     // new ForkCheckerPlugin({tslint: true}),
+    new HtmlWebpackPlugin({
+      template: __dirname + '/index.html'
+    }),
     new webpack.DefinePlugin({
       'process.env': {NODE_ENV: JSON.stringify(process.env.NODE_ENV)}
     })
