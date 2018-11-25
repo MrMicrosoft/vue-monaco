@@ -15,7 +15,7 @@ before_deploy:
 deploy:
   provider: firebase
   token:
-    secure: Un50VYqqed9qp2h4fSsc+NOIIQD4MXliNeISUTapIgVBc0DQKhxvia+4qxzJavj7/WhLRVs5WNjQFWnlaU9Qp5LXK/TsYh9AD7RfJoYFPanfaarNlQYiQ6BXEGp5bIdV9MZosYuaLEoh8ALmIz7dW8WkruIlKb/g6+Lw78I7dAdSS147GaROzajyK2B0WiK5XYaxHnikEffU/8mMxFl2BKh9jNvLsqVY1eix+nv3hhh1ar6hMfyx5smf/urjiuDEH8PI9yLyOY0ZUgcFMQ4YqdWM+gUaMvFeuC3g2is9L0Nn0q0TDJa7V4g9RRTPK69g7COlYLhrU5VlNjTt5gBI16wf2i866V6XpXWAurw/l2E9CImT9RsyyuKzDnSuGXIwx+5uM+kRlP7clKqnisZyCyu37CzYiarfpZ4QPci1ZNx8OPI3WFydc16aFgp2tn4UHYfmzycZQpIcGmUHPWZ0WWiq+NGKzU1CnWZqnTCv4jiqktsR3FY7ocAC613V0k7v4uFI01UGQWZOxctJBAAUPai+4PQxdenH+ixaGlxMoUeGmiZ33arT6lCAYbMWhxo1SQQ8U/uJvYGIOW81aU1tk+oWUjodL+TKEmexVAYa/hhm2oVb4gWIhtvjT05ZimZsRH9+zeXXWikQJu8zVogxNd2uhtjAiZ3jqqSwhFFpEaM=
+        secure: "1/G4797V37nQfPMxH3OWjH9zq3ys1zUeBr8DWCrr_TrEUPd9W7DAQ-RJYSqoDPpOIQ"
   message: Client Deploy
   project: vue-monaco
   on:
