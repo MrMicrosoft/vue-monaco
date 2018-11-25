@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- 6.4.1
+- stable
 branches:
   only:
   - master
@@ -15,7 +15,7 @@ before_deploy:
 deploy:
   provider: firebase
   token:
-        secure: "1/G4797V37nQfPMxH3OWjH9zq3ys1zUeBr8DWCrr_TrEUPd9W7DAQ-RJYSqoDPpOIQ"
+    secure: 1/G4797V37nQfPMxH3OWjH9zq3ys1zUeBr8DWCrr_TrEUPd9W7DAQ-RJYSqoDPpOIQ
   message: Client Deploy
   project: vue-monaco
   on:
@@ -23,3 +23,6 @@ deploy:
 cache:
   directories:
   - client/node_modules
+env:
+  global:
+    secure: NF6zYn498iCl/sZloGEOQhi1jV7WoSK8jE+EVvJMA0DsQCbeM2axTeO2rRGo78BaSAuoeikM3kFn2rWKaYcQLbP7hFfLv4zVS4br3Mf/dlhRnGeetHn9QmEVe0phccN5QlzW64LacWBKzJdD93ZCCrF2VOYu4C6IWOTye9CxXO2PpUQHE6FZukmXkkPTbzWU/sUSRgAFmUJxBInTG7xPyE+6njw58alG2TX5xC18HizV42Kv4hKRZXdEvtuUNHUarkq9GO+XDnzasm5z/gYgm6kms9QuQ8tqFMigtUT0undhOiJZ8TDsaC/Y/HTLMXCGhQDXVzRbKH4z245T+0DQ3LQqJWo63KodZgC93fAPRuCGGb9BFdfckxslmsAbLkT8e/nWLufheXstG+fnotK0uXiUGQV468A1BgNGS/hcF9vTR6QjAtSSYIvhYw8A0JrHQihoxnsl57d9HkwrW6abcFG6A/TgRVoEvo3Nj7f429v1pNPlKNb+ocNWxBLo/xSBj+8DoTbxAZtSE90kKVDqnAYIRIjibjrwW0DuT9WyL/Yk7jH5wGUTL/8xtxoRQEyqGQVgFiLkuPAr5EbzVt8X0Zj61Mc/5yPcDx6XSECL/hnKd/66w4FJSBamaLxBO3/clkTth8Viw36SEksiu5SYQnNr9ZPgkvpKNlY87/WZfzE=
